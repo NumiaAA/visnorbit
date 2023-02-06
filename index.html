@@ -58,9 +58,7 @@
                 >
               </li>
               <li class="menu__item">
-                <a href="#contact" class="menu__item-link" data-scroll
-                  >Контакты</a
-                >
+                <a href="#sta2" class="menu__item-link" data-scroll>Контакты</a>
               </li>
             </ul>
             <div class="menu__phone">
@@ -86,7 +84,7 @@
             </p>
             <p>Выполняем услуги по монтажу, замене, ремонту любой сантехники</p>
             <div class="main__screen-btns btns">
-              <button class="btn">Вызвать сантехника</button>
+              <button class="btn modal__btn">Вызвать сантехника</button>
             </div>
           </div>
           <div class="main__screen-image">
@@ -103,7 +101,7 @@
           <div class="quality__cards cards">
             <div class="cards__item card">
               <div class="card__icon">
-                <img src="../img/icon-timer.svg" alt="icon-timer" />
+                <img src="./img/icon-timer.svg" alt="icon-timer" />
               </div>
               <div class="card__title">Быстрый выезд</div>
               <div class="card__subtitle">
@@ -113,7 +111,7 @@
 
             <div class="cards__item card">
               <div class="card__icon">
-                <img src="../img/icon-save.svg" alt="icon-save " />
+                <img src="./img/icon-save.svg" alt="icon-save " />
               </div>
               <div class="card__title">Гарантия и чек</div>
               <div class="card__subtitle">
@@ -123,7 +121,7 @@
 
             <div class="cards__item card">
               <div class="card__icon">
-                <img src="../img/icon-people.svg" alt="icon-people" />
+                <img src="./img/icon-people.svg" alt="icon-people" />
               </div>
               <div class="card__title">Опытные мастера</div>
               <div class="card__subtitle">
@@ -168,11 +166,7 @@
           <div class="sta__text">
             <h3 class="sta__title">Заказать БЕСПЛАТНЫЙ выезд мастера</h3>
             <div class="sta__text-form">
-              <form
-                id="form"
-                onsubmit="send(event, '../send.php')"
-                method="post"
-              >
+              <form id="form" action="send.php" method="POST">
                 <div class="form-group">
                   <input
                     type="text"
@@ -181,20 +175,21 @@
                     placeholder="+7 (___) ___-__-__"
                   />
                 </div>
+                <div style="margin-top: 20px" class="sta__btn">
+                  <button type="submit" class="sta__btn btn">
+                    Перезвоните мне
+                  </button>
+                  <p>
+                    Нажимая кнопку, вы соглашаетесь с политикой
+                    конфиденциальности
+                  </p>
+                </div>
               </form>
-            </div>
-            <div class="sta__btn">
-              <button type="submit" class="sta__btn btn">
-                Перезвоните мне
-              </button>
-              <p>
-                Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
-              </p>
             </div>
           </div>
 
           <div class="sta__image">
-            <img src="../img/form.svg" alt="sta-image" />
+            <img src="./img/form.svg" alt="sta-image" />
           </div>
         </div>
       </section>
@@ -203,7 +198,7 @@
           <div class="about__main">
             <h4 class="about__title">О нас</h4>
             <div class="about__image">
-              <img src="../img/about.svg" alt="about-img" />
+              <img src="./img/about.svg" alt="about-img" />
             </div>
             <p class="about__main-text">
               Наши специалисты имеют богатый опыт и высокую квалификацию,
@@ -230,7 +225,7 @@
                   <img
                     width="350"
                     height="350"
-                    src="../img/review-1.jpg"
+                    src="./img/review-1.jpg"
                     alt="review-1"
                   />`
                 </div>
@@ -248,7 +243,7 @@
               </div>
               <div class="swiper-slide slide">
                 <div class="slide__image">
-                  <img src="../img/review-2.jpg" alt="review-2" />`
+                  <img src="./img/review-2.jpg" alt="review-2" />`
                 </div>
                 <div class="slide__text">
                   <p class="slide__text-title">Аннастасия</p>
@@ -260,7 +255,7 @@
               </div>
               <div class="swiper-slide slide">
                 <div class="slide__image">
-                  <img src="../img/review-3.jpg" alt="review-3" />`
+                  <img src="./img/review-3.jpg" alt="review-3" />`
                 </div>
                 <div class="slide__text">
                   <p class="slide__text-title">Валерия</p>
@@ -274,7 +269,7 @@
               </div>
               <div class="swiper-slide slide">
                 <div class="slide__image">
-                  <img src="../img/review-5.jpg" alt="review-5" />`
+                  <img src="./img/review-5.jpg" alt="review-5" />`
                 </div>
                 <div class="slide__text">
                   <p class="slide__text-title">Тамара</p>
@@ -288,7 +283,7 @@
               </div>
               <div class="swiper-slide slide">
                 <div class="slide__image">
-                  <img src="../img/review-4.jpg" alt="review-4" />`
+                  <img src="./img/review-4.jpg" alt="review-4" />`
                 </div>
                 <div class="slide__text">
                   <p class="slide__text-title">Владимир</p>
@@ -304,10 +299,10 @@
             <div class="swiper-pagination"></div>
             <!-- If we need navigation buttons -->
             <div class="swiper__prev">
-              <img src="../img/prev.svg" alt="btn-prev" />
+              <img src="./img/prev.svg" alt="btn-prev" />
             </div>
             <div class="swiper__next">
-              <img src="../img/next.svg" alt="btn-next" />
+              <img src="./img/next.svg" alt="btn-next" />
             </div>
           </div>
         </div>
@@ -325,7 +320,7 @@
                   <div class="trigger__img-bg">
                     <img
                       class="rotate"
-                      src="../img/btn-tabs.svg"
+                      src="./img/btn-tabs.svg"
                       alt="arrow-down"
                     />
                   </div>
@@ -348,7 +343,7 @@
                   <div class="trigger__img-bg">
                     <img
                       class="rotate"
-                      src="../img/btn-tabs.svg"
+                      src="./img/btn-tabs.svg"
                       alt="arrow-down"
                     />
                   </div>
@@ -370,7 +365,7 @@
                   <div class="trigger__img-bg">
                     <img
                       class="rotate"
-                      src="../img/btn-tabs.svg"
+                      src="./img/btn-tabs.svg"
                       alt="arrow-down"
                     />
                   </div>
@@ -390,7 +385,7 @@
                   <div class="trigger__img-bg">
                     <img
                       class="rotate"
-                      src="../img/btn-tabs.svg"
+                      src="./img/btn-tabs.svg"
                       alt="arrow-down"
                     />
                   </div>
@@ -413,7 +408,7 @@
                   <div class="trigger__img-bg">
                     <img
                       class="rotate"
-                      src="../img/btn-tabs.svg"
+                      src="./img/btn-tabs.svg"
                       alt="arrow-down"
                     />
                   </div>
@@ -435,7 +430,7 @@
                   <div class="trigger__img-bg">
                     <img
                       class="rotate"
-                      src="../img/btn-tabs.svg"
+                      src="./img/btn-tabs.svg"
                       alt="arrow-down"
                     />
                   </div>
@@ -452,21 +447,17 @@
         </div>
       </section>
 
-      <section id="contact" class="sta__two">
+      <section id="sta2" class="sta__two">
         <div class="container flex-space">
           <div class="sta__image">
-            <img src="../img//sta-2.svg" alt="sta-image" />
+            <img src="./img//sta-2.svg" alt="sta-image" />
           </div>
           <div class="sta__text">
             <h3 class="sta__title">
               Оставьте заявку на ремонт сантехники и получите СКИДКУ 15%
             </h3>
             <div class="sta__text-form">
-              <form
-                id="form"
-                onsubmit="send(event, '../send.php')"
-                method="post"
-              >
+              <form id="form" action="send.php" method="POST">
                 <div class="form-group">
                   <input
                     type="text"
@@ -475,15 +466,16 @@
                     placeholder="+7 (___) ___-__-__"
                   />
                 </div>
+                <div style="margin-top: 20px" class="sta__btn">
+                  <button type="submit" class="sta__btn btn">
+                    Перезвоните мне
+                  </button>
+                  <p>
+                    Нажимая кнопку, вы соглашаетесь с политикой
+                    конфиденциальности
+                  </p>
+                </div>
               </form>
-            </div>
-            <div class="sta__btn">
-              <button type="submit" class="sta__btn btn">
-                Перезвоните мне
-              </button>
-              <p>
-                Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
-              </p>
             </div>
           </div>
         </div>
@@ -494,7 +486,7 @@
       <div class="container">
         <div class="footer__logo">
           <a href="/">
-            <img src="../img/logo.svg" alt="logo" />
+            <img src="./img/logo.svg" alt="logo" />
           </a>
         </div>
         <div class="footer__privacy">
@@ -505,6 +497,50 @@
         </div>
       </div>
     </footer>
+    <div class="modal__wrapper">
+      <div class="modal">
+        <div class="modal__close">
+          <img src="./img/cancel.svg" alt="cancel" width="10px" height="10px" />
+        </div>
+        <div class="modal__title">
+          <span>Проблемы с сантехникой? Вызовите мастера!</span>
+        </div>
+        <div class="modal__subtitle">
+          <span
+            >Оставьте, пожалуйста, свой номер телефона, и наш специалист
+            свяжется с Вами.</span
+          >
+        </div>
+        <div class="modal__body">
+          <div class="modal__body-form">
+            <form
+              class="modal__body-form"
+              id="form"
+              action="send.php"
+              method="POST"
+            >
+              <div class="modal-form-group">
+                <input
+                  type="text"
+                  name="phone"
+                  class="form-control-modal"
+                  placeholder="+7 (___) ___-__-__"
+                />
+              </div>
+              <div class="modal__btns">
+                <button type="submit" class="modal__btn-submit">
+                  Вызвать мастера
+                </button>
+              </div>
+            </form>
+          </div>
+          <p class="policy__modal">
+            Нажимая на кнопку "Заказать услугу", вы соглашаетесь c политикой
+            конфиденциальности
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
   <script type="module">
     import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";

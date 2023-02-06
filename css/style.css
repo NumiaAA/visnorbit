@@ -192,7 +192,6 @@ nav {
   display: none;
   cursor: pointer;
 }
-
 .main {
   position: relative;
   width: 100%;
@@ -957,7 +956,7 @@ nav {
 @media screen and (max-width: 991.98px) {
   .menu {
     position: fixed;
-    background: #131418;
+    background: #819fe6;
     left: 0;
     top: 0;
     height: 100vh;

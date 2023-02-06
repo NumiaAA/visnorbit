@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
     <title>Установка, ремонт и демонтаж полотенцесушителя</title>
   </head>
   <body class="main__body">
@@ -35,19 +35,23 @@
             </div>
             <ul class="menu">
               <li class="menu__item">
-                <a href="#" class="menu__item-link" data-scroll>Главная</a>
+                <a href="#main" class="menu__item-link" data-scroll>Главная</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item-link" data-scroll>Услуги</a>
+                <a href="#prices" class="menu__item-link" data-scroll>Услуги</a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item-link" data-scroll>О компании</a>
+                <a href="#about" class="menu__item-link" data-scroll
+                  >О компании</a
+                >
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item-link" data-scroll>Отзывы</a>
+                <a href="#reviews" class="menu__item-link" data-scroll
+                  >Отзывы</a
+                >
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__item-link" data-scroll>Контакты</a>
+                <a href="#sta2" class="menu__item-link" data-scroll>Контакты</a>
               </li>
             </ul>
             <div class="menu__phone">
@@ -60,7 +64,7 @@
         </div>
       </nav>
     </header>
-    <div class="main">
+    <div id="main" class="main">
       <div class="container">
         <div class="main__screen">
           <div class="main__screen-text">
@@ -76,7 +80,7 @@
               комплектующих
             </p>
             <div class="main__screen-btns btns">
-              <button class="btn">Вызвать сантехника</button>
+              <button class="btn modal__btn">Вызвать сантехника</button>
             </div>
           </div>
           <div class="main__screen-image">
@@ -124,7 +128,7 @@
           </div>
         </div>
       </div>
-      <section class="prices">
+      <section id="prices" class="prices">
         <div class="container">
           <h2 class="prices__title">Наши цены</h2>
           <ul class="prices__list">
@@ -169,8 +173,8 @@
             <div class="sta__text-form">
               <form
                 id="form"
-                onsubmit="send(event, './send.php')"
-                method="post"
+                action="send.php"
+              method="POST"
               >
                 <div class="form-group">
                   <input
@@ -180,15 +184,16 @@
                     placeholder="+7 (___) ___-__-__"
                   />
                 </div>
+                <div style="margin-top: 20px" class="sta__btn">
+                  <button type="submit" class="sta__btn btn">
+                    Перезвоните мне
+                  </button>
+                  <p>
+                    Нажимая кнопку, вы соглашаетесь с политикой
+                    конфиденциальности
+                  </p>
+                </div>
               </form>
-            </div>
-            <div class="sta__btn">
-              <button type="submit" class="sta__btn btn">
-                Перезвоните мне
-              </button>
-              <p>
-                Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
-              </p>
             </div>
           </div>
 
@@ -197,7 +202,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <div class="container">
           <div class="about__main">
             <h4 class="about__title">О нас</h4>
@@ -217,7 +222,7 @@
         </div>
       </section>
 
-      <section class="reviews">
+      <section id="reviews" class="reviews">
         <div class="container">
           <h5>Отзывы наших клиентов</h5>
           <!-- Slider main container -->
@@ -451,7 +456,7 @@
         </div>
       </section>
 
-      <section class="sta__two">
+      <section id="sta2" class="sta__two">
         <div class="container flex-space">
           <div class="sta__image">
             <img src="./img//sta-2.svg" alt="sta-image" />
@@ -463,8 +468,8 @@
             <div class="sta__text-form">
               <form
                 id="form"
-                onsubmit="send(event, './send.php')"
-                method="post"
+                action="send.php"
+              method="POST"
               >
                 <div class="form-group">
                   <input
@@ -474,15 +479,16 @@
                     placeholder="+7 (___) ___-__-__"
                   />
                 </div>
+                <div style="margin-top: 20px" class="sta__btn">
+                  <button type="submit" class="sta__btn btn">
+                    Перезвоните мне
+                  </button>
+                  <p>
+                    Нажимая кнопку, вы соглашаетесь с политикой
+                    конфиденциальности
+                  </p>
+                </div>
               </form>
-            </div>
-            <div class="sta__btn">
-              <button type="submit" class="sta__btn btn">
-                Перезвоните мне
-              </button>
-              <p>
-                Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
-              </p>
             </div>
           </div>
         </div>
@@ -504,6 +510,50 @@
         </div>
       </div>
     </footer>
+    <div class="modal__wrapper">
+      <div class="modal">
+        <div class="modal__close">
+          <img src="./img/cancel.svg" alt="cancel" width="10px" height="10px" />
+        </div>
+        <div class="modal__title">
+          <span>Проблемы с сантехникой? Вызовите мастера!</span>
+        </div>
+        <div class="modal__subtitle">
+          <span
+            >Оставьте, пожалуйста, свой номер телефона, и наш специалист
+            свяжется с Вами.</span
+          >
+        </div>
+        <div class="modal__body">
+          <div class="modal__body-form">
+            <form
+              class="modal__body-form"
+              id="form"
+              action="send.php"
+              method="POST"
+            >
+              <div class="modal-form-group">
+                <input
+                  type="text"
+                  name="phone"
+                  class="form-control-modal"
+                  placeholder="+7 (___) ___-__-__"
+                />
+              </div>
+              <div class="modal__btns">
+                <button type="submit" class="modal__btn-submit">
+                  Вызвать мастера
+                </button>
+              </div>
+            </form>
+          </div>
+          <p class="policy__modal">
+            Нажимая на кнопку "Заказать услугу", вы соглашаетесь c политикой
+            конфиденциальности
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
   <script type="module">
     import Swiper from "https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js";
